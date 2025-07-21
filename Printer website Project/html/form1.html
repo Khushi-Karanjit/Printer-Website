@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login/Sign up</title>
+        <meta name="viewport"content="width=device-width , initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+    <div class="nav-logo border"> 
+        <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <img src="/indeximages/locationicon.png" alt="location">
+                    <p class="add-second">Location</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search SKAYK" class="search-input" >
+                <div class="search-icon">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Hey, Create account</span></p>
+                <p class="nav-second"><span> <a href="/html/form1.html" style="color: white;">Sign Up</a> </span></p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second"><span> & Orders</span></p>
+            </div>
+            <div class="nav-cart">
+                <img src="/indeximages/carticon.jpg" alt="cart">
+            <a href="cart.html">Cart</a>
+            </div>
+            </div>
+            <div class="panel">
+                <div class="panel-all">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panel-ops">
+                    <a href="index.html">Home</a>
+                    <a href="/html/shop.html">Products </a>
+                    <a href="/html/blog.html">Blog</a>
+                    <a href="#"> Research</a>
+                    <a href="/html/form1.html"> Contact Us </a>
+                    <a href="/html/aboutus.html">About Us</a>
+                </div>
+                <div class="panel-deals">
+                    shop deals in electronics
+                </div>
+            </div>
+            
+           
+        </header>
+        <script>
+            function validationForm(){
+                var FullName = document.forms["loginForm"]["fname"].value;
+                var username = document.forms["loginForm"]["lname"].value;
+                var Gender = document.forms["loginForm"]["genderDetails"].value;
+                var Password = document.forms["loginForm"]["Password"].value;
+                if(FullName==""|| username==""||Gender==""||Password==""){
+                    alert("Please Fill all the fields")
+                }
+                else{
+                    alert("Thank you for filling the form")
+                }
+            }
+        </script>
+        <div class="hello">
+        <div class = "container">
+            <div class="title">Contact Us</div><ist/div>
+            <form name="loginForm" onsubmit="validationForm()">
+                <div class ="user-details">
+                    <div class="input-box"> 
+                    <span class ="details">Full Name</span>
+                    <input type="text" name="fname" placeholder="Enter your first name"required>
+                </div> 
+                <div class="input-box">
+                    <span class="details">username</span>
+                    <input type="text" name="lname" placeholder="Enter your last name"required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your Email"required>
+                </div>
+                
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number"required>
+                </div>
+                
+                <br>
+                <label>Message</label>
+              <p>sfkjdfh</p>
+               
+                <textarea rows="10" cols="25" name="message" placeholder="Enter your message" style="text-align: center;"></textarea>
+                
+              
+                    
+                </div>
+                
+                <div class="gender-details">
+                    <input type="radio" name="genderDetails" id="dot-1">
+                    <input type="radio" name="genderDetails" id="dot-2">
+                    <input type="radio" name="genderDetails" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class ="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">prefer not to say</span>
+                    </label>
+                </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" >
+                </div>
+            </form>
+        </div>
+        </div>
+                    
+            <div class="go-back">
+
+                <a href="/index.html" class="goback-button">Go Back to Home page</a>
+              </div>
+        
+    
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.hello{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg,blue);
+    background-color: lightsteelblue;
+}
+.navbar{
+        height: 62px;
+        background-color: #0F1111;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly ;
+    }
+    
+    .nav-logo{
+        height: 60px;
+        width: 110px;
+    }
+    .logo{
+        background-image: url(  /indeximages/logo2.png);
+        background-size: cover;
+        height: 60px;
+        width: 100%;
+    
+    }
+    .border{
+        border: 1.5px solid transparent;
+    }
+    .border:hover{
+        border: 1.5px solid rgb(254, 253, 253);
+    }
+    /*  box two*/
+    .add-first{
+     color: #cccccc;
+     font-size: 12px ;
+     margin-left: 15px;
+    }
+    .add-second{
+      font-size: 16px;
+      margin-left: 3px;
+    }
+    .add-icon{
+        display: flex;
+        width: 20px;
+    height: 20px;
+    
+    }
+    /* box3*/
+    .nav-search{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(255, 11, 231);
+        width: 620px ;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .search-select{
+        background-color: #f3f3f3;
+        width: 50px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+    }
+    .search-input{
+        width: 100%;
+        font-size: 16px;
+        border: none;
+    }
+    .search-icon{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color:#0F1111;
+     
+        
+    }
+    .nav-search:hover{
+        border: 2px solid rgb(255, 0, 217);
+    }
+    /* box four */
+    span{
+        font-size: 10px;
+    }
+    .nav-second{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    /* box six*/
+    .nav-cart img {
+    font-size: 26px;
+    height: 30px;
+    width: 30px;
+}
+    .nav-cart{
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .nav-cart a{
+        color: white;
+        text-decoration: none;
+    }
+    .panel{
+        height: 40px;
+        display: flex;
+        background-color: rgb(98, 98, 86);
+        color: #f3f3f3;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .panel-ops p{
+        display: inline;  
+        margin-left: 15px;
+    
+    }
+    .panel-ops a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+        
+    }
+    
+    .panel-ops a:hover{
+        background-color: rgb(98, 98, 86);
+        color: white;
+        background-size: contain;
+        font-weight: bold;
+        font-size: large;
+       
+    }
+    .panel-ops{
+        width: 70%;
+        font-size: 12px;
+    
+    }
+    .panel-deals{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:linear-gradient(135deg,whitesmoke,lightsteelblue) ;
+}
+.container form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 15px;
+    font-size :16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;   
+}
+form .user-details .input-box input:focus,
+form .user-details .input-box input:valid{
+    border-color: rgb(0, 0, 0);
+}
+form .gender-details .gender-title{
+    font-size: 20px ;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display : flex;
+    width: 80%;
+    margin: 14 px 0;
+   
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right:10px;
+    border: 5px solid transparent;
+
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+        
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline : none; 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background : linear-gradient(135deg,#71b7e6 ,#9b59b6)
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #63c0ff, #ce59fd);
+}
+@media(max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        display: flex;
+        width: 80%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details ::-webkit-scrollbar{
+        width: 0;
+    }
+}
+.go-back{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    .goback-button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #222f3d;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    
+    }
+    .goback-button:hover{
+     background-color: #92efff;
+     color: rgb(0, 0, 0);
+    }
+</style>
+        
+    </body></html>
+                                                                                                                                                                                                                                                                                                                                                                                                                          

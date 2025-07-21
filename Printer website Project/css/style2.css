@@ -1,0 +1,54 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:80%;
+    border: 10px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.myblog{
+    margin-bottom: 20px;
+}
+
+.date{
+    color: #fff;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    border-left: 5px solid #2370a5;
+    padding-left: 5px;
+}
+
+h2{
+    font-size: 2.0rem;
+    color: #fff ;
+}
+
+hr{
+    border-radius: 0;
+    height: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+}
+p{
+    color: #fff;
+    font-weight: 400;
+}
+
+p1{
+    border-left: 5px solid #2370a5;
+    color: #fff;
+}
+
+ul{
+    color: #fff;
+}

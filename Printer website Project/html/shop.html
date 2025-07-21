@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="/js/script1.js" defer></script>
+    <title>Products</title>
+</head>
+<body>
+    <style>
+    /* Add some basic styles for the pop-up */
+    #cartPopup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      font-size: larger;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      margin-top: 100px;
+      
+    }
+  </style>
+
+
+  <!-- Your product or button that triggers the pop-up -->
+ 
+
+  <script>
+    function showCartPopup() {
+      // Show the cart pop-up
+      document.getElementById('cartPopup').style.display = 'block';
+    }
+
+    function hideCartPopup() {
+      // Hide the cart pop-up
+      document.getElementById('cartPopup').style.display = 'none';
+    }
+  </script>
+
+<header>
+    <div class="navbar">
+<div class="nav-logo border"> 
+<div class="logo"></div>
+    </div>
+    <div class="nav-address border">
+        <p class="add-first">Deliver to</p>
+        <div class="add-icon">
+            <img src="/indeximages/locationicon.png" alt="location">
+            <p class="add-second">Location</p>
+        </div>
+    </div>
+    <div class="nav-search">
+        <select class="search-select">
+            <option>All</option>
+        </select>
+        <input placeholder="Search SKAYK" class="search-input" >
+        <div class="search-icon">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="nav-signin border">
+        <p><span>Hey, Create account</span></p>
+        <p class="nav-second"><span> <a href="/html/form1.html" style="color: white;">Sign Up</a> </span></p>
+    </div>
+    <div class="nav-return border">
+        <p><span>Returns</span></p>
+        <p class="nav-second"><span> & Orders</span></p>
+    </div>
+    <div class="nav-cart">
+        <img src="/indeximages/carticon.jpg" alt="cart">
+    <a href="cart.html">Cart</a>
+    </div>
+    </div>
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <a href="index.html">Home</a>
+            <a href="/html/shop.html">Products </a>
+            <a href="/html/blog.html">Blog</a>
+            <a href="#"> Research</a>
+            <a href="/html/form1.html"> Contact Us </a>
+            <a href="/html/aboutus.html">About Us</a>
+        </div>
+        <div class="panel-deals">
+            shop deals in electronics
+        </div>
+    </div>
+    
+   
+</header>
+   
+
+    <div class="container">
+        <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded"><img src="/indeximages/vector-left-arrow-icon.jpg" alt="icon"></button>
+            <div class="image-list">
+                <img src="/indeximages/slide1.png" alt="img-1" class="image-item">
+                <img src="/indeximages/slide2.jpg" alt="img-2" class="image-item">
+                <img src="/indeximages/heroimage.jpg" alt="img-3" class="image-item">
+                <img src="/indeximages/newslide.jpg" alt="img-3" class="image-item">
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded"><img src="/indeximages/rightarrowicon.png" alt="icon"></button>
+        </div>
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb">
+
+                </div>
+            </div>
+        
+    </div>
+    <h1> Our Products</h1>
+    <div class="hero-section">
+        <div class="shop-section">
+            <div class=" box">
+               <div class="box-content">
+                
+                <div class="box-img" style="background-image: url('/indeximages/drs.png')"></div>
+               <h3>DR-S150</h3>
+                
+                <li>Network scanner- Built-in Wifi Wired Ethernet and USB connections</li>
+                <li> Access from a wide variety of devices </li>
+                <li> Speed: Up to 45 ppm/90ipm</li>
+                <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 30,999</p>
+                <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+                <!-- The cart pop-up -->
+                <div id="cartPopup">
+                  <p>Item added to cart!</p>
+                  <button onclick="hideCartPopup()">Close</button>
+                </div>
+               </div>
+            </div>
+            <div class=" box" >
+                <div class="box-content">
+                
+                <div class="box-img" style="background-image: url('/indeximages/lasertwo.png')"></div>
+                <h3>PIXMA G670</h3>
+                <li>Print, Scan, Copy</li>
+                <li>ISO standerd speed(A4): up to 3.9 ipm blac/color</li>
+                <li> Wireless, wireless PictBridge, Mopria, AirPrint, Direct Wireless</li>
+                <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 40,999</p>
+                <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+                <!-- The cart pop-up -->
+                <div id="cartPopup">
+                  <p>Item added to cart!</p>
+                  <button onclick="hideCartPopup()">Close</button>
+                </div>  
+            </div>
+            </div>
+            <div class=" box">
+                <div class="box-content">
+                
+                <div class="box-img" style="background-image: url('/indeximages/printerone.png')"></div>
+                <h3>imageClass MF643Cdw</h3>
+                <li>Print, Scan, copy</li>
+                <li>Print Speed(A4): Up to 21ppm(mono/Color)</li>
+                <li> Print resolution: Up to 1,200(equivalance)x 1,200dpi(equivalance)</li>
+                <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 60,999</p>
+                <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+                <!-- The cart pop-up -->
+                <div id="cartPopup">
+                  <p>Item added to cart!</p>
+                  <button onclick="hideCartPopup()">Close</button>
+                </div>
+            </div>
+            </div>
+           
+               <div class=" box">
+                <div class="box-content">
+                 
+                 <div class="box-img" style="background-image: url('/indeximages/prograf.png')"></div>
+                 <h3>imagePROGRAF GP-520</h3>
+                <li>ideal for eye-catching posters and printers and print proofing</li>
+                <li>10 colours+flourescent pink ink</li>
+                <li> Intelligent media handeling system</li>
+                <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 35,999</p>
+                <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+                <!-- The cart pop-up -->
+                <div id="cartPopup">
+                  <p>Item added to cart!</p>
+                  <button onclick="hideCartPopup()">Close</button>
+                </div>  
+            </div>
+             </div>
+             <div class=" box" ><div class="box-content">
+                
+                 <div class="box-img" style="background-image: url('/indeximages/multi.jpg')"></div>
+                 <h3>imageRunner 2600i Series</h3>
+                 <li>A3 Monochrome</li>
+                 <li>Print Speed up to 45 pages per Minutes</li>
+                 <br>
+               <br>
+                 <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 55,999</p>
+               
+               <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+               <!-- The cart pop-up -->
+               <div id="cartPopup">
+                 <p>Item added to cart!</p>
+                 <button onclick="hideCartPopup()">Close</button>
+               </div>
+                </div>
+                
+            </div>
+             <div class=" box"><div class="box-content">
+                
+                 <div class="box-img" style="background-image: url('/indeximages/dotmatrix.jpg')"></div>
+                 <h3>24-Pin Narrow Carriage Impact Printer</h3>
+                 <li>Narrow carriage 24-pin SIDM High 416 CPS print speed at 12CPI</li>
+                 <li>10,000 power on hour MTBF</li>
+                 <li>USB, Serial and Parallel ports</li>
+                 <p style="color: rgb(217, 48, 48); font-weight: bold;">Rs 20,999</p>
+                 <button onclick="showCartPopup()" class="add-to-cart-button">Add to Cart</button>
+
+                <!-- The cart pop-up -->
+                <div id="cartPopup" >
+                  <p>Item added to cart!</p>
+                  <button onclick="hideCartPopup()">Close</button>
+                </div>
+
+                </div>
+            </div>
+    </div>
+  <div class="go-back">
+
+    <a href="/index.html" class="goback-button">Go Back to Home page</a>
+  </div>
+
+
+
+    <footer>
+    <div class="foot-panel1">
+
+        <a href="/html/shop.html" style="text-decoration: none; color: white;" > Back to top </a>
+    </div>
+    <div class="foot-panel2">
+        <ul>
+            <h3>Get To Know Us</h3>
+            <a href="/html/aboutus.html">About us</a>
+            <a href="/html/aboutus.html">Careers</a>
+            <a href="/html/blog.html">Blog</a>
+            <a href="#"> Research</a>
+            <a href="/html/form1.html">Sign in/Sign up</a>
+        </ul>
+        <ul>
+            <h3>SKAYK Payment Methods</h3>
+            <a>Business card</a>
+            <a>Reward Points</a>
+            <a>Bank Account </a>
+            <a>Visa/Master Card</a>
+            <a>Esewa/Khalti/PhonePay</a>
+        </ul>
+       
+        <ul>
+            <h3>Let Us Help You</h3>
+            
+            <a>Your Account</a>
+            <a>Your Orders</a>
+            <a>SKAYK Assistant</a>
+            <a>Help</a>
+        </ul>
+    </div>
+
+
+
+<div class="foot-panel3">
+    <div class="logo"></div>
+</div>
+
+<div class="foot-panel4">
+    <div class="pages">
+<a>Condition of use</a>
+<a>Privacy Notice</a>
+<a>Your Ads Privacy Chocies</a>
+</div>
+
+<div class="copyright">
+    © 2023-2024, SKAYK.com, Inc. or its affiliates
+</div>
+</div>
+</footer>
+<style>
+    *{
+    
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+    .navbar{
+        height: 62px;
+        background-color: #0F1111;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly ;
+    }
+    
+    .nav-logo{
+        height: 60px;
+        width: 110px;
+    }
+    .logo{
+        background-image: url(  /indeximages/logo2.png);
+        background-size: cover;
+        height: 60px;
+        width: 100%;
+    
+    }
+    .border{
+        border: 1.5px solid transparent;
+    }
+    .border:hover{
+        border: 1.5px solid rgb(254, 253, 253);
+    }
+    /*  box two*/
+    .add-first{
+     color: #cccccc;
+     font-size: 12px ;
+     margin-left: 15px;
+    }
+    .add-second{
+      font-size: 16px;
+      margin-left: 3px;
+    }
+    .add-icon{
+        display: flex;
+        width: 20px;
+    height: 20px;
+    
+    }
+    /* box3*/
+    .nav-search{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(255, 11, 231);
+        width: 620px ;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .search-select{
+        background-color: #f3f3f3;
+        width: 50px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+    }
+    .search-input{
+        width: 100%;
+        font-size: 16px;
+        border: none;
+    }
+    .search-icon{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color:#0F1111;
+     
+        
+    }
+    .nav-search:hover{
+        border: 2px solid rgb(255, 0, 217);
+    }
+    /* box four */
+    span{
+        font-size: 10px;
+    }
+    .nav-second{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    /* box six*/
+    .nav-cart img {
+    font-size: 26px;
+    height: 30px;
+    width: 30px;
+}
+    .nav-cart{
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .nav-cart a{
+        color: white;
+        text-decoration: none;
+    }
+    .panel{
+        height: 40px;
+        display: flex;
+        background-color: rgb(98, 98, 86);
+        color: #f3f3f3;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .panel-ops p{
+        display: inline;  
+        margin-left: 15px;
+    
+    }
+    .panel-ops a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+        
+    }
+    
+    .panel-ops a:hover{
+        background-color: rgb(98, 98, 86);
+        color: white;
+        background-size: contain;
+        font-weight: bold;
+        font-size: large;
+       
+    }
+    .panel-ops{
+        width: 70%;
+        font-size: 12px;
+    
+    }
+    .panel-deals{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    body{
+    
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    .slider-wrapper{
+        margin-top: 4px;
+        margin-left: 200px;
+        position: relative;
+        
+    }
+    .slider-wrapper button img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .slider-wrapper .slide-button{
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        border: none;
+        outline: none;
+        background: #ffffff;
+        font-size: 35.2px;
+        cursor: pointer;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+    .slider-wrapper .slide-button:hover{
+       background-color: #797979;
+    
+    }
+    .slider-wrapper .slide-button #prev-slide{
+        left: -20px;
+        display: none;
+    }
+    .slider-wrapper .slide-button#next-slide{
+        right: 20px;
+        
+    }
+    .slider-wrapper .image-list{
+    
+        display: grid;
+        grid-gap: 18px;
+        font-size: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin-bottom: 30px;
+        grid-template-columns: repeat(10, 1fr);
+    
+    }
+    .slider-wrapper .image-list::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
+    .slider-wrapper .image-list .image-item{
+         width: 1200px;
+         height: 500;
+         object-fit: cover;
+    }
+    .container .slider-scrollbar{
+        height: 24px;
+        width: 100%;
+        
+        display: flex;
+    
+        align-items: center;
+    }
+     
+    .slider-scrollbar .scrollbar-track{
+        position: relative;
+        border-radius: 4px;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .slider-scrollbar:hover .scrollbar-track{
+        height: 4px;
+    }
+    
+    
+       .slider-scrollbar .scrollbar-thumb{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+       background-color: #000;
+       border-radius: inherit;
+       cursor: grab;
+    }
+    .slider-scrollbar .scrollbar-thumb:active{
+        cursor: grabbing;
+        height: 8px;
+        top: -2px;
+    }
+    .slider-scrollbar .scrollbar-thumb ::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+    }
+    
+    
+    .shop-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(191, 204, 208) ;
+        margin: 0 auto;
+    }
+    .box{
+        /* border: 2px solid rgb(0, 0, 0); */
+        background-color: white;
+        height: 500px;
+        width: 30%;
+        padding: 20px 0px 15px;
+        margin-top: 15px;
+    }
+    .box-img{
+        height: 300px;
+        background-size: cover;
+        
+        margin-top: 16px;
+        margin-bottom: 16px;
+     
+    }
+    .box-content{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .box-content p{
+        color: #007185 ;
+    }
+    
+    
+    /*   go back buttuon */
+    .go-back{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    .goback-button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #222f3d;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    
+    }
+    .goback-button:hover{
+     background-color: #92efff;
+     color: rgb(0, 0, 0);
+    }
+    .add-to-cart-button{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ffac53;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        
+      
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        margin-top: 5px;
+    }
+    .foot-panel1{
+        background-color: rgb(164, 104, 104);
+        color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 10px;
+    }
+    .foot-panel2{
+        background-color: #222f3d;
+        color: white;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    ul{
+        margin-top: 20px;
+    }
+    ul a{
+        display: block;
+        font-size: 10px;
+        margin-top: 10px;
+        color: #DDDDDD;
+    }
+    .foot-panel3{
+        background-color: #222f3d;
+        border-top: 0.5px solid white;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        background-image: url("/indeximages/logo2.png");
+        background-size: cover;
+        height: 60px;
+        width: 100px;
+    }
+    .foot-panel4{
+        background-color: #0F1111;
+        color: white;
+        font-size:11px;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .pages{
+     
+     padding-top: 25px;
+    }
+    .copyright{
+        padding-top: 5px ;
+    
+    }
+    </style>
+</body>
+</html>
